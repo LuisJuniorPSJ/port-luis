@@ -37,13 +37,13 @@
   color: blueviolet;
 }
 
-/* Estilos para o ícone de menu mobile */
+
 .mobile-menu-icon {
   display: none;
   cursor: pointer;
 }
 
-/* Estilos para o menu mobile (inicialmente oculto) */
+
 .mobile-menu {
   display: none;
   background-color: #000000;
@@ -54,11 +54,15 @@
 .mobile-menu ul {
   list-style-type: none;
   padding: 0;
+ 
 }
 
 .mobile-menu a {
   text-decoration: none;
   color: white;
+  /* border-bottom: 1px solid white;
+  width: 100%;
+  display: block; */
 }
 
 /* Media query para telas menores */

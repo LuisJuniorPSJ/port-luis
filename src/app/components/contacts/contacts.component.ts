@@ -14,3 +14,7 @@ export class ContactsComponent implements OnInit {
     }, 100);
   }
 }
+
+
+
+

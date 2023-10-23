@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class NaviBarComponent {
   mobileMenuActive: boolean = false;
-  isDarkTheme: boolean = false;
 
   toggleMobileMenu() {
     this.mobileMenuActive = !this.mobileMenuActive;
   }
+
+
+closeMobileMenu() {
+  this.mobileMenuActive = false;
+}
 }

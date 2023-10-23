@@ -9,6 +9,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,

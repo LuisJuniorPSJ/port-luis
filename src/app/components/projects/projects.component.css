@@ -28,6 +28,7 @@
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border-radius: 1rem;
 }
 
 .project-card img {
@@ -53,6 +54,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .links a {
@@ -68,6 +70,7 @@
 
 .links a:hover {
   background-color: rgba(137, 43, 226, 0.712);
+  animation:none;
 }
 
 @keyframes pulse {

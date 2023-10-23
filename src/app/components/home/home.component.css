@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 50%;
+  width: 48%;
 }
 
 h1 {
@@ -31,6 +31,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   color: rgb(87, 87, 87);
+  font-weight: normal;
 }
 
 img {
@@ -72,8 +73,8 @@ a:hover {
     43,
     226,
     0.733
-  ); /* Nova cor ao passar o mouse (pode personalizar) */
-  animation: none; /* Pára a animação ao passar o mouse */
+  ); 
+  animation: none; 
 }
 
 @media (max-width: 900px) {
@@ -93,5 +94,15 @@ a:hover {
 
   .my-apre {
     width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .img-edit{
+    width: 200px;
+  }
+  h2{
+    font-size: 1rem;
+    text-align: center;
   }
 }
