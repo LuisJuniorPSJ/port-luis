@@ -68,13 +68,8 @@ a {
 }
 
 a:hover {
-  background-color: rgba(
-    137,
-    43,
-    226,
-    0.733
-  ); 
-  animation: none; 
+  background-color: rgba(137, 43, 226, 0.733);
+  animation: none;
 }
 
 @media (max-width: 900px) {
@@ -98,11 +93,11 @@ a:hover {
 }
 
 @media (max-width: 640px) {
-  .img-edit{
+  .img-edit {
     width: 200px;
   }
-  h2{
-    font-size: 1rem;
+  h2 {
+    font-size: 1.2rem;
     text-align: center;
   }
 }

@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   contentVisible: boolean = false;
 
+  name: string = 'Luis Junior';
+
   ngOnInit(): void {
     setTimeout(() => {
       this.contentVisible = true;

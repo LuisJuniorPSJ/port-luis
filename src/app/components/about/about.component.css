@@ -7,7 +7,6 @@
   opacity: 1;
 }
 
-
 .about-container {
   display: flex;
   align-items: center;
@@ -25,7 +24,7 @@
 }
 
 .about-text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: rgb(87, 87, 87);
 }
 
@@ -61,7 +60,7 @@ li {
 @media (max-width: 662px) {
   img {
     width: 32px;
-    height: auto;
+    max-height: 100%;
   }
 
   .tecs-content {
@@ -69,7 +68,7 @@ li {
   }
 
   .about-text {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   .about-content {
