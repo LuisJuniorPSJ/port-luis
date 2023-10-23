@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/port-luis",
+            "outputPath": "docs",
+            "baseHref": "/port-luis/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
