@@ -9,7 +9,7 @@
 
 .projects-container {
   padding: 40px;
-  min-height: 92vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@
 
 .links a:hover {
   background-color: rgba(137, 43, 226, 0.712);
-  animation:none;
+  animation: none;
 }
 
 @keyframes pulse {

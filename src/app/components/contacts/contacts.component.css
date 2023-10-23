@@ -13,7 +13,7 @@
   align-items: center;
   padding: 20px;
   width: 100%;
-  height: 92vh;
+  min-height: 100vh;
   background-color: rgb(220, 220, 252);
 }
 
@@ -21,13 +21,14 @@
   text-align: center;
 }
 
-input,textarea{
+input,
+textarea {
   outline: none;
 }
 
 .social-link {
   display: flex;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   justify-content: center;
   font-size: 1rem;
   align-items: center;
@@ -56,11 +57,11 @@ input,textarea{
 
 h2 {
   font-size: 24px;
-  color: rgb(59, 59, 59);;
+  color: rgb(59, 59, 59);
 }
 
-label{
-  color: rgb(59, 59, 59);;
+label {
+  color: rgb(59, 59, 59);
 }
 
 .form-group {
@@ -85,7 +86,7 @@ label{
   animation: pulse 1.5s infinite;
 }
 
-.btn:hover{
+.btn:hover {
   animation: none;
   background-color: rgba(137, 43, 226, 0.705);
 }
@@ -103,12 +104,11 @@ label{
 }
 
 @media (max-width: 768px) {
-  .container{
+  .container {
     flex-direction: column;
-    height: auto;
     gap: 2rem;
   }
-  .contact-form{
+  .contact-form {
     width: 100%;
   }
 }
