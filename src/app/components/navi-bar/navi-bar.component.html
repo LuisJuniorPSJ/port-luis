@@ -1,0 +1,24 @@
+<div class="navbar">
+  <div class="logo">Luis Junior</div>
+  <div class="menu">
+    <ul>
+      <li><a routerLink="/home">Página Inicial</a></li>
+      <li><a routerLink="/about">Sobre</a></li>
+      <li><a routerLink="/contacts">Contato</a></li>
+      <li><a routerLink="/projects">Projetos</a></li>
+    </ul>
+  </div>
+  <!-- Botão de alternância de tema -->
+  <div class="mobile-menu-icon" (click)="toggleMobileMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+</div>
+
+<div class="mobile-menu" [ngClass]="{ active: mobileMenuActive }">
+  <ul>
+    <li><a routerLink="/home">Página Inicial</a></li>
+    <li><a routerLink="/about">Sobre</a></li>
+    <li><a routerLink="/contacts">Contato</a></li>
+    <li><a routerLink="/projects">Projetos</a></li>
+  </ul>
+</div>
