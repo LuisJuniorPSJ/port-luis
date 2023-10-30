@@ -6,8 +6,10 @@
 .fade-in.show {
   opacity: 1;
 }
-
-.projects-container {
+.dark-theme {
+  background-color: black !important;
+}
+.container {
   padding: 40px;
   min-height: 100vh;
   display: flex;

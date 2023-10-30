@@ -7,7 +7,10 @@
   opacity: 1;
 }
 
-.about-container {
+.dark-theme {
+  background-color: black !important;
+}
+.container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

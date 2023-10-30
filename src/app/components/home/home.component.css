@@ -7,7 +7,11 @@
   opacity: 1;
 }
 
-.home-container {
+.dark-theme {
+  background-color: black !important;
+}
+
+.container {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -73,7 +77,7 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-  .home-container {
+  .container {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 1rem;

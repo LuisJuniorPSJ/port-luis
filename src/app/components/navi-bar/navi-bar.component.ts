@@ -12,8 +12,7 @@ export class NaviBarComponent {
     this.mobileMenuActive = !this.mobileMenuActive;
   }
 
-
-closeMobileMenu() {
-  this.mobileMenuActive = false;
-}
+  closeMobileMenu() {
+    this.mobileMenuActive = false;
+  }
 }

@@ -16,7 +16,9 @@
 
 <div class="mobile-menu" [ngClass]="{ active: mobileMenuActive }">
   <ul>
-    <li (click)="closeMobileMenu()"><a routerLink="/home">Página Inicial</a></li>
+    <li (click)="closeMobileMenu()">
+      <a routerLink="/home">Página Inicial</a>
+    </li>
     <li (click)="closeMobileMenu()"><a routerLink="/about">Sobre</a></li>
     <li (click)="closeMobileMenu()"><a routerLink="/contacts">Contato</a></li>
     <li (click)="closeMobileMenu()"><a routerLink="/projects">Projetos</a></li>
