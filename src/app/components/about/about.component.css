@@ -17,7 +17,7 @@
   width: 100%;
   min-height: 100vh;
   flex-direction: column;
-  background-color: rgb(220, 220, 252);
+  background-color: black;
 }
 
 .about-content {
@@ -28,7 +28,8 @@
 
 .about-text {
   font-size: 1.5rem;
-  color: rgb(87, 87, 87);
+  color: white;
+  font-weight: 200;
 }
 
 .tecs-content {

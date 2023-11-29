@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgb(220, 220, 252);
+  background-color: black;
 }
 
 .my-apre {
@@ -29,12 +29,12 @@
 
 h1 {
   font-size: 2.5rem;
-  color: rgb(59, 59, 59);
+  color: white;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: rgb(87, 87, 87);
+  color: white;
   font-weight: normal;
 }
 
