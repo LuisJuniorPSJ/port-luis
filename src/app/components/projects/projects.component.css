@@ -26,11 +26,12 @@
 }
 
 .project-card {
-  background-color: white;
+  background-color: black;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 1rem;
+  border: solid 1px white;
 }
 
 .project-card img {
@@ -48,7 +49,7 @@
 
 .project-card p {
   font-size: 16px;
-  color: rgb(87, 87, 87);
+  color: white;
 }
 
 .links {
@@ -61,7 +62,7 @@
 
 .links a {
   text-decoration: none;
-  background-color: blueviolet;
+  background-color: black;
   display: block;
   padding: 0.3rem;
   border-radius: 2rem;
@@ -71,8 +72,9 @@
 }
 
 .links a:hover {
-  background-color: rgba(137, 43, 226, 0.712);
+  background-color: white;
   animation: none;
+  color: blueviolet;
 }
 
 @keyframes pulse {

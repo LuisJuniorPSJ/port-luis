@@ -49,7 +49,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blueviolet;
+  background-color: black;
   padding: 1rem;
   width: 30%;
   border-radius: 0.2rem;
@@ -72,8 +72,10 @@ a {
 }
 
 a:hover {
-  background-color: rgba(137, 43, 226, 0.733);
+  background-color: white;
   animation: none;
+  color: blueviolet;
+  font-weight: 500;
 }
 
 @media (max-width: 900px) {
