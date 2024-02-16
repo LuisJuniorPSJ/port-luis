@@ -49,7 +49,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(175, 8, 8);
   padding: 1rem;
   width: 30%;
   border-radius: 0.2rem;
