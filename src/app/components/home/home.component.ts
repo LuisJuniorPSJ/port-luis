@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   contentVisible: boolean = false;
+  isModalOpen: boolean = false;
 
-  name: string = 'Luis Fabiano';
+  openModal(event: MouseEvent): void {
+    // event.preventDefault();
+    this.isModalOpen = true;
+  }
+
+  closeModal(): void {
+    this.isModalOpen = false;
+  }
+
+  @Output() close = new EventEmitter<void>();
+
+  onClose(): void {
+    this.close.emit();
+  }
 
   ngOnInit(): void {
     setTimeout(() => {

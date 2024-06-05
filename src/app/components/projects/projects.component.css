@@ -12,35 +12,38 @@
   padding: 40px;
   min-height: 92.8vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background-color: #a9dce3;
 }
 
 .conteiner-projects {
   display: flex;
-  width: 80%;
+  width: 95%;
   margin: 40px auto;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 }
 
-.img-project-size {
-  width: 500px;
+video {
+  width: 75%;
+  height: auto;
+  display: block;
 }
 
 .btn-projects-one {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 12px 0;
+  margin: 10px 0;
+  padding-top: 20px;
 }
 .text-p {
-  font-size: 14px;
+  font-size: 15px;
   color: #0e387a;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .btn-edit {
@@ -58,26 +61,20 @@
   color: #000;
 }
 
-@media (max-width: 1250px) {
-  .conteiner-projects {
-    flex-direction: column;
-  }
-  .img-project-size {
-    width: 350px;
-  }
-  .conteiner-projects {
-    width: 100%;
-  }
+@media (max-width: 768px) {
   .text-p {
+    width: 70%;
     font-size: 14px;
-  }
-  .flex-reverse {
-    flex-direction: column-reverse;
   }
 }
 @media (max-width: 425px) {
+  .text-p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
   .btn-edit {
-    padding: 10px;
-    font-size: 14px;
+    padding: 5px;
+    font-size: 12px;
   }
 }

@@ -88,15 +88,83 @@
   background-color: #084a79;
 }
 
-@media (max-width: 650px) {
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-text {
+  font-size: 14px;
+}
+
+.modal-backdrop.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.text-modal-one {
+  font-size: 24px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .img-minha {
     max-width: 150px;
   }
   .font-class {
-    font-size: 14px;
+    font-size: 18px;
   }
   .text-edit {
     width: 90%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .img-minha {
+    max-width: 110px;
+  }
+  .font-class {
+    font-size: 16px;
+  }
+  .text-edit {
+    width: 90%;
+    font-size: 12px;
+  }
+  .text-modal-one {
+    font-size: 18px;
+  }
+  .modal-text {
     font-size: 12px;
   }
 }

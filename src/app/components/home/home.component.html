@@ -8,6 +8,28 @@
       aprendizado e inovação, e estou empolgado para compartilhar essas
       histórias com você.
     </h2>
-    <a class="btn-edit shine-btn" href="#">Download Curriculo !</a>
+    <a
+      (click)="openModal($event)"
+      class="btn-edit shine-btn"
+      href="https://drive.usercontent.google.com/download?id=1pAy2vbwO-KuPwAspSztXfGVt8uskVCry&export=download&authuser=0"
+    >
+      Download Curriculo !
+    </a>
   </div>
 </main>
+
+<div
+  class="modal-backdrop"
+  [ngClass]="{ show: isModalOpen }"
+  (click)="closeModal()"
+>
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2 class="text-modal-one">Ebaaaaaaaaaaa !</h2>
+    <img style="width: 32px" src="assets/firework.png" alt="" />
+    <p class="modal-text">
+      Muito obrigado pela escolha, espero que avalie com carinho e aguardo o
+      contato !
+    </p>
+  </div>
+</div>

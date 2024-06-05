@@ -74,22 +74,42 @@ li:hover {
   }
 }
 
-@media (max-width: 770px) {
-  .info-text-about {
-    width: 90%;
-    font-size: 13px;
-    margin-top: 20px;
-  }
-  .size-mobile {
-    width: 40px;
-  }
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .info-text-about {
+    width: 90%;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .size-mobile {
+    width: 55px;
+  }
+}
+@media (max-width: 426px) {
+  .info-text-about {
+    width: 95%;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .size-mobile {
+    width: 45px;
+  }
+}
+@media (max-width: 376px) {
+  .info-text-about {
+    width: 95%;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .size-mobile {
+    width: 40px;
   }
 }
