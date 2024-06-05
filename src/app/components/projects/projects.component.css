@@ -1,96 +1,83 @@
 .fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transform: translateX(-100%);
+  transition: opacity 0.1s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .fade-in.show {
   opacity: 1;
+  transform: translateX(0);
 }
-.dark-theme {
-  background-color: black !important;
-}
+
 .container {
   padding: 40px;
   min-height: 92.8vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: black;
+  background-color: #a9dce3;
 }
 
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.project-card {
-  background-color: black;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-radius: 1rem;
-  border: solid 1px white;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.project-card h3 {
-  font-size: 18px;
-  color: rgb(87, 87, 87);
-}
-
-.project-card p {
-  font-size: 16px;
-  color: white;
-}
-
-.links {
+.conteiner-projects {
   display: flex;
+  width: 80%;
+  margin: 40px auto;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
 }
 
-.links a {
-  text-decoration: none;
-  background-color: black;
+.img-project-size {
+  width: 500px;
+}
+
+.btn-projects-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 12px 0;
+}
+.text-p {
+  font-size: 14px;
+  color: #0e387a;
+}
+
+.btn-edit {
   display: block;
-  padding: 0.3rem;
-  border-radius: 2rem;
-  color: white;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  animation: pulse 1.5s infinite;
+  background-color: #0e387a;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 12px;
+  color: #fff;
 }
 
-.links a:hover {
-  background-color: white;
-  animation: none;
-  color: blueviolet;
+.btn-edit:hover {
+  background-color: #1a6aeca4;
+  transition: 0.3s;
+  color: #000;
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 5px rgba(124, 104, 238, 0.856);
+@media (max-width: 1250px) {
+  .conteiner-projects {
+    flex-direction: column;
   }
-  50% {
-    box-shadow: 0 0 20px rgba(124, 104, 238, 0.822);
+  .img-project-size {
+    width: 350px;
   }
-  100% {
-    box-shadow: 0 0 5px rgba(124, 104, 238, 0.815);
+  .conteiner-projects {
+    width: 100%;
+  }
+  .text-p {
+    font-size: 14px;
+  }
+  .flex-reverse {
+    flex-direction: column-reverse;
   }
 }
-
-@media (max-width: 700px) {
-  .project-cards {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 425px) {
+  .btn-edit {
+    padding: 10px;
+    font-size: 14px;
   }
 }

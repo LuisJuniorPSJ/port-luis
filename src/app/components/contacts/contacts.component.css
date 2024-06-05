@@ -1,10 +1,80 @@
 .fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transform: translateX(-100%);
+  transition: opacity 0.1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-out {
+  transform: translateX(100%);
+  transition: opacity 0.1s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .fade-in.show {
   opacity: 1;
+  transform: translateX(0);
+}
+.fade-out.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-port {
+  background-color: #0e387a;
+  height: 500px;
+  width: 40%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.btn-form {
+  margin: 20px 0;
+  display: block;
+  padding: 10px;
+  width: 200px;
+  background-color: #a9dce3;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #0e387a;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 8px;
+}
+.btn-form:hover {
+  background-color: #00d7f3;
+  color: #fff;
+}
+
+.form-size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-size input {
+  width: 80%;
+  margin: 0px auto;
+  padding: 5px;
+  border: solid 2px #a9dce3;
+  outline: none;
+  border-radius: 5px;
+}
+label {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  color: #fff !important;
+  font-size: 14px;
+}
+textarea {
+  width: 80%;
+  margin: 0px auto 0 auto;
+  color: #000 !important;
+  font-size: 14px;
+  padding: 5px;
+  resize: none;
+  border-radius: 5px;
+  outline: none;
+  border: solid 2px #a9dce3;
 }
 
 .container {
@@ -13,8 +83,8 @@
   align-items: center;
   padding: 20px;
   width: 100%;
-  min-height: 92.8vh;
-  background-color: black;
+  height: 95vh;
+  background-color: #a9dce3;
 }
 
 .social-links {
@@ -73,11 +143,29 @@ label {
 }
 
 @media (max-width: 768px) {
+  .social-img {
+    width: 40px;
+  }
   .container {
     flex-direction: column;
-    gap: 2rem;
   }
-  .contact-form {
-    width: 100%;
+  .form-port {
+    width: 90%;
+    margin-top: 10px;
+    height: 450px;
+  }
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  label {
+    font-size: 12px;
+  }
+  input {
+    font-size: 12px;
+  }
+  .btn-form {
+    padding: 5px;
+    font-size: 14px;
   }
 }

@@ -7,16 +7,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-img {
-  max-width: 100;
-  height: auto;
-}
 
-html,
-body {
-  height: 100%;
-}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #a9dce3;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
