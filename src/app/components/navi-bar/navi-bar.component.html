@@ -2,14 +2,37 @@
   <div class="menu">
     <ul>
       <li>
-        <a routerLink="/home" routerLinkActive="active-link">Página Inicial</a>
-      </li>
-      <li><a routerLink="/about" routerLinkActive="active-link">Sobre</a></li>
-      <li>
-        <a routerLink="/contacts" routerLinkActive="active-link">Contato</a>
+        <a class="link-hover" routerLink="/home" routerLinkActive="active-link"
+          >Página Inicial</a
+        >
       </li>
       <li>
-        <a routerLink="/projects" routerLinkActive="active-link">Projetos</a>
+        <a class="link-hover" routerLink="/about" routerLinkActive="active-link"
+          >Sobre</a
+        >
+      </li>
+      <li>
+        <a
+          class="link-hover"
+          routerLink="/projects"
+          routerLinkActive="active-link"
+          >Projetos</a
+        >
+      </li>
+      <li>
+        <a href="">
+          <img class="link-hover-two" src="assets/git-menu.png" alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="">
+          <img class="link-hover-two" src="assets/whatsapp.png" alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="">
+          <img class="link-hover-two" src="assets/linkedin.png" alt=""
+        /></a>
       </li>
     </ul>
   </div>
@@ -25,7 +48,6 @@
       <a routerLink="/home">Página Inicial</a>
     </li>
     <li (click)="closeMobileMenu()"><a routerLink="/about">Sobre</a></li>
-    <li (click)="closeMobileMenu()"><a routerLink="/contacts">Contato</a></li>
     <li (click)="closeMobileMenu()"><a routerLink="/projects">Projetos</a></li>
   </ul>
 </div>

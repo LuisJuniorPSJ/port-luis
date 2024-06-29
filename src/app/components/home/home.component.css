@@ -1,6 +1,10 @@
 .container {
   width: 100%;
-  background-color: #a9dce3;
+  background-color: #000;
+  min-height: 102vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fade-in {
@@ -18,10 +22,13 @@
   width: 90%;
   margin: 0 auto;
   flex-direction: column;
-  height: 91vh;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+h1 {
+  color: #fff;
 }
 
 .img-minha {
@@ -33,14 +40,14 @@
 
 .font-class {
   font-size: 20px;
-  color: #0e387a;
+  color: #fff;
   font-weight: normal;
 }
 
 .text-edit {
   font-size: 14px;
   width: 45%;
-  color: #0e387a;
+  color: #fff;
   text-align: center;
   font-weight: normal;
 }
