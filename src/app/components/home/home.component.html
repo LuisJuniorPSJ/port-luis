@@ -1,6 +1,21 @@
 <main class="container">
   <div class="content-infos fade-in" [ngClass]="{ show: contentVisible }">
-    <h1>Em manutenção !!</h1>
+    <img class="img-minha" src="assets/perfil-img.png" alt="foto-de-homem" />
+    <h1 class="font-class">Olá me chamo Luis Fabiano !!</h1>
+    <h2 class="text-edit">
+      Neste portfólio, você encontrará alguns dos meus trabalhos mais recentes e
+      projetos de destaque. Cada projeto representa uma jornada única de
+      aprendizado e inovação, e estou empolgado para compartilhar essas
+      histórias com você.
+    </h2>
+    <a
+      (click)="openModal($event)"
+      class="btn-edit shine-btn"
+      href="https://drive.usercontent.google.com/download?id=1EHcAOiOcd6ZdYgWtGNd8eQoP_24X9tlJ&export=download&authuser=0"
+      target="_blank"
+    >
+      Download Curriculo !
+    </a>
   </div>
 </main>
 

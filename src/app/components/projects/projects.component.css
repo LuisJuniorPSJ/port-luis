@@ -9,19 +9,19 @@
 }
 
 .container {
-  padding: 40px;
   min-height: 103vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  flex-direction: column;
+  gap: 25px;
   width: 100%;
   background-color: #000;
 }
 
 .conteiner-projects {
   display: flex;
-  width: 90%;
+  width: 70%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 video {
-  width: 100%;
+  max-width: 450px;
   height: auto;
 }
 
@@ -69,11 +69,17 @@ video {
     width: 70%;
     font-size: 14px;
   }
+  video {
+    max-width: 250px;
+  }
+  .conteiner-projects {
+    width: 90%;
+  }
 }
 @media (max-width: 425px) {
   .text-p {
-    width: 100%;
-    font-size: 12px;
+    width: 90%;
+    font-size: 10px;
     text-align: center;
   }
   .btn-edit {
